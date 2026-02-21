@@ -1,0 +1,1 @@
+Hi there. We're <img src="/MGSc README Name.gif" width="245"/>.
