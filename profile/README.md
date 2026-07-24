@@ -1,1 +1,1 @@
-Hi there. We're <img src="/MGSc README Name.gif" width="245"/>.
+Hi there. We're <img src="/animation.svg" width="245"/>.

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bungee&amp;family=Cinzel:wght@700&amp;family=Courier+Prime:wght@700&amp;family=Dancing+Script:wght@700&amp;family=Press+Start+2P&amp;family=Pacifico&amp;family=Permanent+Marker&amp;family=VT323&amp;family=Montserrat:wght@900&amp;family=Bangers&amp;display=swap');
+
+      .bg {
+        fill: #0d1117;
+      }
+
+      .text-glow {
+        font-size: 52px;
+        font-weight: bold;
+        text-anchor: middle;
+        dominant-baseline: middle;
+        animation: switchFonts 1.2s steps(1, end) infinite, colorShift 6s linear infinite;
+        filter: drop-shadow(0 0 15px rgba(100, 255, 218, 0.4));
+      }
+
+      /* Each step assigns a different font-family */
+      @keyframes switchFonts {
+        0%   { font-family: 'Press Start 2P', monospace; font-size: 32px; }
+        10%  { font-family: 'Cinzel', serif; font-size: 54px; }
+        20%  { font-family: 'Pacifico', cursive; font-size: 50px; }
+        30%  { font-family: 'Courier Prime', monospace; font-size: 48px; }
+        40%  { font-family: 'Bangers', cursive; font-size: 60px; }
+        50%  { font-family: 'Permanent Marker', cursive; font-size: 48px; }
+        60%  { font-family: 'VT323', monospace; font-size: 64px; }
+        70%  { font-family: 'Dancing Script', cursive; font-size: 68px; }
+        80%  { font-family: 'Bungee', cursive; font-size: 38px; }
+        90%  { font-family: 'Montserrat', sans-serif; font-size: 46px; }
+        100% { font-family: 'Press Start 2P', monospace; font-size: 32px; }
+      }
+
+      @keyframes colorShift {
+        0%   { fill: #ff7b72; }
+        25%  { fill: #79c0ff; }
+        50%  { fill: #56d364; }
+        75%  { fill: #e3b341; }
+        100% { fill: #ff7b72; }
+      }
+
+      /* Subtle grid overlay for visual polish */
+      .grid-line {
+        stroke: rgba(255, 255, 255, 0.03);
+        stroke-width: 1;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" class="bg" />
+
+  <!-- Decorative Grid Lines -->
+  <g>
+    <line x1="0" y1="75" x2="900" y2="75" class="grid-line" />
+    <line x1="0" y1="150" x2="900" y2="150" class="grid-line" />
+    <line x1="0" y1="225" x2="900" y2="225" class="grid-line" />
+    <line x1="225" y1="0" x2="225" y2="300" class="grid-line" />
+    <line x1="450" y1="0" x2="450" y2="300" class="grid-line" />
+    <line x1="675" y1="0" x2="675" y2="300" class="grid-line" />
+  </g>
+
+  <!-- Animated Text -->
+  <text x="450" y="150" class="text-glow">Magic Goose Software Co.</text>
+</svg>
